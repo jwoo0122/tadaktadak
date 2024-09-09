@@ -14,6 +14,7 @@
 		B21BE4872C8DEC2E009D1A15 /* tadaktadakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BE4862C8DEC2E009D1A15 /* tadaktadakTests.swift */; };
 		B21BE4912C8DEC2E009D1A15 /* tadaktadakUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BE4902C8DEC2E009D1A15 /* tadaktadakUITests.swift */; };
 		B21BE4932C8DEC2E009D1A15 /* tadaktadakUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BE4922C8DEC2E009D1A15 /* tadaktadakUITestsLaunchTests.swift */; };
+		B253558E2C8E029F004325DB /* KeyboardPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B253558D2C8E029F004325DB /* KeyboardPreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		B21BE48C2C8DEC2E009D1A15 /* tadaktadakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tadaktadakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21BE4902C8DEC2E009D1A15 /* tadaktadakUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tadaktadakUITests.swift; sourceTree = "<group>"; };
 		B21BE4922C8DEC2E009D1A15 /* tadaktadakUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tadaktadakUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B253558D2C8E029F004325DB /* KeyboardPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				B21BE4742C8DEC2D009D1A15 /* tadaktadakApp.swift */,
 				B21BE4762C8DEC2D009D1A15 /* ContentView.swift */,
+				B253558D2C8E029F004325DB /* KeyboardPreview.swift */,
 				B21BE4782C8DEC2E009D1A15 /* Assets.xcassets */,
 				B21BE47A2C8DEC2E009D1A15 /* tadaktadak.entitlements */,
 				B21BE47B2C8DEC2E009D1A15 /* Preview Content */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B253558E2C8E029F004325DB /* KeyboardPreview.swift in Sources */,
 				B21BE4772C8DEC2D009D1A15 /* ContentView.swift in Sources */,
 				B21BE4752C8DEC2D009D1A15 /* tadaktadakApp.swift in Sources */,
 			);
@@ -420,7 +424,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"tadaktadak/Preview Content\"";
 				DEVELOPMENT_TEAM = PQ529UM978;
 				ENABLE_HARDENED_RUNTIME = NO;
@@ -437,7 +441,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -461,7 +465,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"tadaktadak/Preview Content\"";
 				DEVELOPMENT_TEAM = PQ529UM978;
 				ENABLE_HARDENED_RUNTIME = NO;
@@ -478,7 +482,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;

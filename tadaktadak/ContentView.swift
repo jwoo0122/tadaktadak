@@ -24,7 +24,8 @@ extension ClosedRange where Element: Hashable {
 }
 
 struct ContentView: View {
-    var exerciseKey: [String] = ["ㅁ", "ㄴ", "ㅇ", "ㄹ", "ㅓ", "ㅏ", "ㅣ", "ㅣ"]
+    var exerciseKey: [String] = ["ㅁ", "ㄴ", "ㅇ", "ㄹ", "ㅓ", "ㅏ", "ㅣ", ";"]
+    var exerciseKeyEng: [String] = ["a", "s", "d", "f", "j", "k", "l", ";"]
     
     @State private var exercisePrevIndex: Int? = nil
     @State private var exerciseIndex = 0
@@ -63,16 +64,28 @@ struct ContentView: View {
                 .frame(width: 300)
             }
             .frame(height: 100)
+            
+            Spacer()
+            KeyboardPreview(targetKeyIndex: $exerciseIndex)
         }
+        .frame(height: 400)
+        .padding()
         .focusable()
         .focused($focused)
         .focusEffectDisabled()
+        .onChange(of: focused, { oldValue, newValue in
+            if newValue == false {
+               focused = true
+            }
+            print(oldValue, newValue)
+        })
         .onKeyPress(action: { key in
-            if key.characters == exerciseKey[exerciseIndex] {
+            print(key)
+            
+            if key.characters == exerciseKey[exerciseIndex] || key.characters == exerciseKeyEng[exerciseIndex] {
                 wrongInput = false
                 exercisePrevIndex = exerciseIndex
                 exerciseIndex = exerciseNextIndex
-//                exerciseNextIndex = Int.random(in: 0..<8)
                 exerciseNextIndex = (0...7).random(without: [exerciseNextIndex])
             } else {
                 wrongInput = true
